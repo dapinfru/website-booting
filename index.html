@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- berisi tentang meta data / menjadi pusat informasi -->
+    <meta charset="UTF-8">
+     <!--Fungsi nya adalah Menentukan set karakter yang digunakan oleh halaman web  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Fungsi nya adalah Mengatur ukuran layar pada perangkat yang berbeda -->
+    <title>Biodata Diri</title>
+    <style>
+        body {
+       
+            background-color:grey;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        /* berisi tentang style style yang ingin di edit di dalam tabel */
+        table {
+            width: 100%; /*Ukuran tabel*/
+            border-collapse: collapse;/*Merapikan Tabel*/
+        }
+        table, th, td {
+            border: 1px solid rgb(0, 0, 0);
+        }
+        td {
+            padding: 8px;
+            text-align: left;
+        }
+        img {
+            width: 150px; /* Atur lebar gambar sesuai kebutuhan */
+            height: auto; /* Tinggi gambar disesuaikan otomatis */
+            border-radius: 8px;
+        }
+         caption {
+            font-size:1.5em; /*Ukuran font untuk caption (Judul)*/
+            font-weight: bold;/*Membuat caption lebih menarik*/
+            text-align: center; /*memusatkan Judul*/
+            margin: 10px 0; /*Jarak Atas dan Bawah Judul*/
+         }
+        
+    </style>
+    <script src="index.js" type="module"></script>
+</head>
+<body>
+    <!-- menyimpan konten yang dilihat oleh pengguna / menjadi badan dalam web -->
+    <table>
+        <!-- membuat tabel -->
+        <caption>Biodata Diri</caption>
+        <!-- Alasan saya menempatkan caption di dalam tabel agar teks "BIODATA DIRI" otomatis pindah ke tengah / sesuai dengan tabel -->
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <!-- Untuk menengahkan Foto -->
+                <img src="All Image/myself.jpeg" alt="Foto Profil"> <!-- Gambar di baris pertama -->
+            </td>
+        </tr>
+        <tr>
+            <!-- Fungsi tag tr adalah mendefinisikan baris dalam tabel 
+             Penggunaan nya setiap baris dalam tabel diwakili oleh tag <tr>-->
+            
+            <th>Nama</th>
+            <!-- Fungsi tag <th> adalah mendefinisikan sel header.
+                Penggunaan tag ini digunakan pada tag <tr> sebagai penanda sel header tabel -->
+            <td>Dhafin Rizqika Akhmad</td>
+            <!-- Fungsi tag <td> adalah  Mendifinisikan sel data yang berisi informasi
+                Penggunaan nya digunakan di dalam tag <tr> untuk menampilkan data di dalam tabel -->
+        </tr>
+        <tr>
+            <th>Tempat Tanggal Lahir</th>
+            <td>Surabaya, 26 Maret 2006</td>
+        </tr>
+        <tr>
+            <th>Nim</th>
+            <td>240411100099</td>
+        </tr>
+        <tr>
+            <th>Alamat</th>
+            <td>Jl.Trunojoyo No 05</td>
+        </tr>
+        <tr>
+            <th>Kelompok</th>
+            <td>09</td>
+        </tr>
+        <tr>
+            <th>Telepon</th>
+            <td>088991092268</td>
+        </tr>
+        <tr>
+            <th>Instagram</th>
+            <td>dapinfru_</td>
+        </tr>
+    </table>
+    <div id="card">
+    </div>
+</body>
+</html>
